@@ -1,0 +1,19 @@
+function [a, res] = gaussfit2(pcftotnorm,runique);
+
+set(gcbf,'pointer','watch');
+weights = ones(size(pcftotnorm));
+
+    curvefitoptions = optimset('Display','off');
+    
+    %if you fit to circularly averaged and normalized correlation function
+    %like the one obtained frmo stics->pCF transformation...
+   
+    
+    for i=1:size(pcftotnorm,2)
+        a0=runique(max(find(0.5<pcftotnorm(:,i))));
+        [a(i,:),res(i),RESIDUAL,EXITFLAG,OUTPUT,LAMBDA] = lsqcurvefit(@gauss1dnorm,a0,runique,pcftotnorm(:,i).*weights(:,:,i),lb,ub,curvefitoptions,weights(:,:,i));
+    end
+   
+    
+
+set(gcbf,'pointer','arrow');
