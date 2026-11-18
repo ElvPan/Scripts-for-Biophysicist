@@ -1,0 +1,60 @@
+FFCS Simulator and Analysis GUI
+A MATLAB-based graphical application for simulating and analysing Fluorescence Fluctuation Correlation Spectroscopy (FFCS) datasets, including:
+
+FCS (Fluorescence Correlation Spectroscopy)
+ICS (Image Correlation Spectroscopy)
+TICS (Temporal Image Correlation Spectroscopy)
+STICS (Spatio-Temporal Image Correlation Spectroscopy)
+Developed as a training and teaching tool to help users understand how molecular diffusion, flow, concentration, noise, bleaching, and molecular brightness influence fluorescence correlation analyses.
+
+Features
+Simulate fluorescence image time series and FCS traces
+Configure diffusion, flow, particle density and molecular brightness
+Add detector noise, background noise and photobleaching
+Analyse simulated data using FCS, ICS, TICS and STICS
+Compare recovered parameters with known simulation inputs
+Ideal for workshops, teaching and method development
+Installation
+Download the appropriate release for your operating system.
+Run the installer located in the Distribution folder.
+Install the required MATLAB Runtime if prompted.
+Launch the GUI from the desktop shortcut.
+Requirements
+MATLAB Runtime R2024b (Windows) or R2025b (macOS)
+~3.5 GB free disk space
+Sufficient RAM for large image-series datasets
+MATLAB Runtime can be downloaded from:
+
+https://au.mathworks.com/products/compiler/matlab-runtime.html
+
+Basic Workflow
+Initialise Parameters
+Configure simulation settings
+Define particle population properties
+Generate simulated FFCS data
+Select an analysis method (FCS, ICS, TICS or STICS)
+Compute correlation functions
+Fit the selected model and recover parameters
+Educational Objectives
+The software provides a hands-on environment for learning:
+
+Molecular diffusion measurements
+Directed flow analysis
+Number density estimation
+Correlation function interpretation
+Effects of noise and bleaching on FFCS experiments
+Because the ground-truth simulation parameters are known, users can directly evaluate the accuracy and limitations of different analysis approaches.
+
+Citation
+If you use this software for teaching or research, please cite:
+
+Pandzic E, Whan RM. A Practical Guide to Fluorescence Temporal and Spatial Correlation Spectroscopy. The Biophysicist. 2021;2(1):40–69. DOI: 10.35459/tbp.2019.000143
+
+Contact
+Dr Elvis Pandzic
+Katharina Gaus Light Microscopy Facility
+UNSW Sydney, Australia
+e.pandzic@unsw.edu.au
+
+Disclaimer
+This software is provided "as is" without warranty of any kind.
